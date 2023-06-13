@@ -4,3 +4,20 @@ const arr = [2, 4, 6, 8, 10];
 
 // Assign middle element to val variable
 const val = arr[Math.floor(arr.length / 2)];
+
+
+Js Reverse String
+
+function reverseString(n) {
+  // Split the string into an array of characters
+  let characters = n.split("");
+
+  // Reverse the array of characters
+  let reversedCharacters = characters.reverse();
+
+  // Join the reversed characters back into a string
+  let reversedString = reversedCharacters.join("");
+
+  // Return the reversed string
+  return reversedString;
+}
