@@ -1,0 +1,12 @@
+ function taxcount(salary,percentage){
+    return (salary*percentage)/100;
+ }
+function creatTax(percentage) {
+ return function (salary) {
+   return (salary*percentage)/100;
+  
+ }
+ 
+}
+taxcount(20000 , 10);
+result will come 2000 
