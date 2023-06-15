@@ -11,3 +11,19 @@ function solve(obj){
     console.log(`${key}: ${obj[key]}`);
   }
 }
+
+JS Promise me - 1
+function promiseMe(time , data) {
+      return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(data);
+    }, time);
+  });
+    // return the output using return keyword
+    // do not console.log it
+
+
+promiseMe(200, "Hello").then((data) => {
+    console.log(data);
+  });
+}
