@@ -10,3 +10,23 @@ function sumOfProductOfDigits(n1, n2)
     
          
 }
+
+
+
+
+High Performers:
+
+function highPerformers(students) {
+  let studentsWithAverage = students.map(student => {
+    let average = student.scores.reduce((total, score) => total + score, 0) / student.scores.length;
+    return {
+      name: student.name,
+      average: average
+    };
+  });
+
+ 
+  let highPerformingStudents = studentsWithAverage.filter(student => student.average > 90);
+
+  return highPerformingStudents;
+}
