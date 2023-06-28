@@ -1,2 +1,12 @@
 JS Query Params
+// Complete the getEmployeeDetails function 
+function getEmployeeDetails(url) {
+    let params =url.split("?")[1];
+    const params1 = new URLSearchParams(params);
+    let id = params1.get("id");
+    let name = params1.get("name");
+    let designation = params1.get("designation");
+    let result = `Employee ${id} named ${name} works as ${designation}`;
+    return result;
+}
 
